@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Havana — روابط</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <img src="logo_placeholder.png" alt="Havana logo" class="nav-logo">
+      <span class="brand-text">هافانا</span>
+    </div>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="تبديل الوضع">🌙</button>
+      <a class="cta" href="#links">روابطنا</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <img src="logo_placeholder.png" class="hero-logo" alt="logo">
+    <h1>هافانا</h1>
+    <p class="lead">المكان الذي يجمع كل حسابات ومتاجر Havana — سريع، مرتب، واحترافي.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://havanaiq.com/" target="_blank">زيارة الموقع الرسمي</a>
+      <button class="btn btn-ghost" id="openQR">رمز الوصول (QR)</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section id="links" class="cards" aria-label="روابط">
+    <a class="card" href="https://havanaiq.com/" target="_blank">
+      <div class="card-left">الموقع الرسمي</div>
+      <div class="card-right">🛒</div>
+    </a>
+    <a class="card" href="https://wa.me/message/HJDQF5WAWFT6N1" target="_blank">
+      <div class="card-left">تواصل عبر WhatsApp</div>
+      <div class="card-right">💬</div>
+    </a>
+    <a class="card" href="https://www.facebook.com/share/1XR4zShVE9/?mibextid=wwXIfr" target="_blank">
+      <div class="card-left">فيسبوك (الرجالي)</div>
+      <div class="card-right">📘</div>
+    </a>
+    <a class="card" href="https://www.facebook.com/share/1C357G5hDu/?mibextid=wwXIfr" target="_blank">
+      <div class="card-left">فيسبوك (الأطفال)</div>
+      <div class="card-right">🧸</div>
+    </a>
+    <a class="card" href="https://www.instagram.com/havana_fashion_iq?igsh=MTRraTAzY2F1MGN6aw%3D%3D&utm_source=qr" target="_blank">
+      <div class="card-left">إنستغرام (الرجالي)</div>
+      <div class="card-right">📸</div>
+    </a>
+    <a class="card" href="https://www.instagram.com/havana.kids?igsh=dWo0NWlqdGpnMXF0&utm_source=qr" target="_blank">
+      <div class="card-left">إنستغرام (الأطفال)</div>
+      <div class="card-right">🎈</div>
+    </a>
+  </section>
+
+  <section class="branches" id="branches" aria-label="فروعنا">
+    <h2>فروعنا 📍</h2>
+    <ul>
+      <li>الفرع الأول: كربلاء المقدسة / حي الحسين مول العفاف الطابق الأول</li>
+      <li>الفرع الثاني: كربلاء المقدسة / مول الفردوس الطابق الأول</li>
+      <li>الفرع الثالث: كربلاء المقدسة / شارع السناتر</li>
+    </ul>
+  </section>
+
+  <section class="download" aria-label="تحميل">
+    <h3>تحميل الموقع كامل (ZIP)</h3>
+    <a class="download-btn" id="downloadZip" href="havana_pro_site.zip" download>تحميل النسخة الجاهزة</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div>© 2025 Havana — جميع الحقوق محفوظة</div>
+  <div class="footer-links">
+    <a href="https://havanaiq.com/" target="_blank">الموقع</a> ·
+    <a href="#branches">فروعنا</a>
+  </div>
+</footer>
+
+<!-- QR Modal -->
+<div id="qrModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" id="closeQR">✕</button>
+    <h4>امسح الباركود للوصول السريع</h4>
+    <img src="qr.png" alt="QR code" class="qr-image">
+    <a href="qr.png" download class="download-btn">تحميل QR</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
